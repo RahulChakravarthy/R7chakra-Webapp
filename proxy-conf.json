@@ -1,0 +1,7 @@
+{
+  "__comment" : "This proxy file redirects all requests received by angular's default port (usually port 4200) to the server side node port (usually port 3000) => start ng server with -> ng serve --proxy-config proxy-conf.json",
+  "/rest": {
+    "target": "http://localhost:3000",
+    "secure": false
+  }
+}
