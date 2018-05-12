@@ -1,6 +1,6 @@
 # R7chakraWebapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+Webapp written in MEAN stack deployed on Heroku https://r7chakra-webapp.herokuapp.com/
 
 ## Development server
 
