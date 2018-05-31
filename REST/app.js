@@ -132,7 +132,7 @@ app.get('/assets/fonts/simple-line-icons/Simple-Line-Icons.woff?v=2.2.2', (req, 
   res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/fonts/simple-line-icons/Simple-Line-Icons.woff?v=2.2.2'));
 });
 
-app.get('/assets/fonts/simple-line-icons/Simple-Line-Icons.woff2?v=2.2.2', (req, res) => {
+app.get('/Simple-Line-Icons.woff2?v=2.2.2', (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/fonts/simple-line-icons/Simple-Line-Icons.woff2?v=2.2.2'));
 });
 
@@ -140,8 +140,16 @@ app.get('/assets/fonts/icomoon/icomoon.ttf?qtatmt', (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/fonts/icomoon/icomoon.ttf?qtatmt'));
 });
 
-app.get('/assets/fonts/icomoon/icomoon.woff?qtatmt', (req, res) => {
+app.get('/fonts/icomoon/icomoon.woff?qtatmt', (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/fonts/icomoon/icomoon.woff?qtatmt'));
+});
+
+app.get('/fonts/icomoon/icomoon.ttf?srf3rx', (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/fonts/icomoon/icomoon.ttf?srf3rx'));
+});
+
+app.get('/icomoon.ttf?srf3rx', (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/fonts/icomoon/icomoon.ttf?srf3rx'));
 });
 
 /**
@@ -181,6 +189,14 @@ app.get('/assets/images/person4.jpg', (req, res) => {
 
 app.get('/assets/images/hero_bg.jpg', (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/images/hero_bg.jpg'));
+});
+
+app.get('/assets/images/hero_bg.jpg', (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/images/hero_bg.jpg'));
+});
+
+app.get('/Preloader_2.gif', (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/images/Preloader_2.gif'));
 });
 
 /**

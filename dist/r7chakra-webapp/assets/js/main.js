@@ -1,22 +1,22 @@
 ;(function () {
-	
+
 	'use strict';
 
 
 
-	// iPad and iPod detection	
-	var isiPad = function(){
-		return (navigator.platform.indexOf("iPad") != -1);
+	// iPad and iPod detection
+	let isiPad = function(){
+		return (navigator.platform.indexOf("iPad") !== -1);
 	};
 
-	var isiPhone = function(){
+  let isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
-			(navigator.platform.indexOf("iPod") != -1)
+			(navigator.platform.indexOf("iPhone") !== -1) ||
+			(navigator.platform.indexOf("iPod") !== -1)
 	    );
 	};
 
-	var fullHeight = function() {
+  let fullHeight = function() {
 		if ( !isiPad() || !isiPhone() ) {
 			$('.js-fullheight-home').css('height', $(window).height() - $('.fh5co-main-nav').height());
 			$(window).resize(function(){
@@ -26,11 +26,11 @@
 	};
 
 	// Loading page
-	var loaderPage = function() {
+  let loaderPage = function() {
 		$(".fh5co-loader").fadeOut("slow");
 	};
 
-	var fh5coTabs = function() {
+  let fh5coTabs = function() {
 		// $('.fh5co-tabs-container').
 		$('.fh5co-tabs li a').click(function(event){
 			event.preventDefault();
@@ -41,9 +41,9 @@
 				$this.closest('.fh5co-tabs-container').find('.fh5co-tab-content').removeClass('active');
 				$this.closest('.fh5co-tabs-container').find('.fh5co-tab-content[data-tab-content="'+tab+'"]').addClass('active');
 		});
-	}
+	};
 
-	var gridAutoHeight = function() {
+  let gridAutoHeight = function() {
 		if (!isiPhone() || !isiPad()) {
 			$('.fh5co-grid-item').css('height', $('.fh5co-2col-inner').outerHeight()/2);
 		}
@@ -52,9 +52,9 @@
 				$('.fh5co-grid-item').css('height', $('.fh5co-2col-inner').outerHeight()/2);
 			}
 		});
-	}
+	};
 
-	var sliderSayings = function() {
+	let sliderSayings = function() {
 		$('#fh5co-sayings .flexslider').flexslider({
 			animation: "slide",
 			slideshowSpeed: 5000,
@@ -63,15 +63,15 @@
 			smoothHeight: true,
 			reverse: true
 	  	});
-	}
+	};
 
-	var offcanvasMenu = function() {
+	let offcanvasMenu = function() {
 		$('body').prepend('<div id="fh5co-offcanvas" />');
 		$('body').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>');
 
 		$('.fh5co-main-nav .fh5co-menu-1 a, .fh5co-main-nav .fh5co-menu-2 a').each(function(){
 
-			var $this = $(this);
+			let $this = $(this);
 
 			$('#fh5co-offcanvas').append($this.clone());
 
@@ -79,19 +79,19 @@
 		// $('#fh5co-offcanvas').append
 	};
 
-	var mainMenuSticky = function() {
-		
-		var sticky = $('.js-sticky');
+	let mainMenuSticky = function() {
+
+		let sticky = $('.js-sticky');
 
 		sticky.css('height', sticky.height());
 		$(window).resize(function(){
 			sticky.css('height', sticky.height());
 		});
 
-		var $section = $('.fh5co-main-nav');
-		
+		let $section = $('.fh5co-main-nav');
+
 		$section.waypoint(function(direction) {
-		  	
+
 		  	if (direction === 'down') {
 
 			    	$section.css({
@@ -116,9 +116,9 @@
 		});
 
 	};
-	
+
 	// Parallax
-	var parallax = function() {
+	let parallax = function() {
 
 		// $(window).stellar();
 		if (!isiPhone() || isiPad() ) {
@@ -129,11 +129,11 @@
 
 
 	// Burger Menu
-	var burgerMenu = function() {
+	let burgerMenu = function() {
 
 		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
 
-			var $this = $(this);
+			let $this = $(this);
 
 			if( $('body').hasClass('offcanvas-visible') ) {
 				$('body').removeClass('offcanvas-visible fh5co-overflow');
@@ -149,13 +149,13 @@
 
 	};
 
-	var scrolledWindow = function() {
+	let scrolledWindow = function() {
 
 		$(window).scroll(function(){
 
-			var scrollPos = $(this).scrollTop();
+			let scrollPos = $(this).scrollTop();
 
-			
+
 		   if ( $('body').hasClass('offcanvas-visible') ) {
 		   	$('body').removeClass('offcanvas-visible');
 		   	$('.js-fh5co-nav-toggle').removeClass('active');
@@ -169,45 +169,45 @@
 		   	$('.js-fh5co-nav-toggle').removeClass('active');
 		   }
 		});
-		
+
 	};
 
 	// Click outside of offcanvass
-	var mobileMenuOutsideClick = function() {
+	let mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
-	    var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
+	    let container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 
 	    	if ( $('body').hasClass('offcanvas-visible') ) {
 
     			$('body').removeClass('offcanvas-visible');
     			$('.js-fh5co-nav-toggle').removeClass('active');
-				
+
 	    	}
-	    
-	    	
+
+
 	    }
 		});
 
 	};
 
-	var goToTop = function() {
+	let goToTop = function() {
 
 		$('.js-gotop').on('click', function(event){
-			
+
 			event.preventDefault();
 
 			$('html, body').animate({
 				scrollTop: $('html').offset().top
 			}, 500, 'easeInOutExpo');
-			
+
 			return false;
 		});
 
 		$(window).scroll(function(){
 
-			var $win = $(window);
+			let $win = $(window);
 			if ($win.scrollTop() > 200) {
 				$('.js-top').addClass('active');
 			} else {
@@ -215,26 +215,26 @@
 			}
 
 		});
-	
+
 	};
 
 
 	// Page Nav
-	var clickMenu = function() {
-		var topVal = ( $(window).width() < 769 ) ? 0 : 58;
+	let clickMenu = function() {
+		let topVal = ( $(window).width() < 769 ) ? 0 : 58;
 
 		$(window).resize(function(){
-			topVal = ( $(window).width() < 769 ) ? 0 : 58;		
+			topVal = ( $(window).width() < 769 ) ? 0 : 58;
 		});
 		$('.fh5co-main-nav a:not([class="external"]), #fh5co-offcanvas a:not([class="external"])').click(function(event){
-			var section = $(this).data('nav-section');
+			let section = $(this).data('nav-section');
 
 				if ( $('div[data-section="' + section + '"]').length ) {
 
 					$('html, body').animate({
 			        	scrollTop: $('div[data-section="' + section + '"]').offset().top - topVal
-			    	}, 500, 'easeInOutExpo');	
-			    	
+			    	}, 500, 'easeInOutExpo');
+
 			   }
 
 		    event.preventDefault();
@@ -246,17 +246,17 @@
 	};
 
 	// Reflect scrolling in navigation
-	var navActive = function(section) {
-		
+	let navActive = function(section) {
+
 		$('.fh5co-main-nav a[data-nav-section], #fh5co-offcanvas a[data-nav-section]').removeClass('active');
 		$('.fh5co-main-nav, #fh5co-offcanvas').find('a[data-nav-section="'+section+'"]').addClass('active');
-		
+
 	};
 
-	var navigationSection = function() {
+	let navigationSection = function() {
 
-		var $section = $('div[data-section]');
-		
+		let $section = $('div[data-section]');
+
 		$section.waypoint(function(direction) {
 		  	if (direction === 'down') {
 		    	navActive($(this.element).data('section'));
@@ -275,10 +275,6 @@
 		});
 
 	};
-
-
-	
-
 
 	// Document on load.
 	$(function(){
@@ -301,6 +297,5 @@
 		goToTop();
 
 	});
-
 
 }());

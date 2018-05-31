@@ -50473,6 +50473,136 @@ var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('6.0.1')
 
 /***/ }),
 
+/***/ "./node_modules/ng2-sticky-nav/dist/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/ng2-sticky-nav/dist/index.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+var core_1 = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var common_1 = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+var sticky_nav_directive_1 = __webpack_require__(/*! ./src/sticky-nav.directive */ "./node_modules/ng2-sticky-nav/dist/src/sticky-nav.directive.js");
+__export(__webpack_require__(/*! ./src/sticky-nav.directive */ "./node_modules/ng2-sticky-nav/dist/src/sticky-nav.directive.js"));
+var StickyNavModule = (function () {
+    function StickyNavModule() {
+    }
+    StickyNavModule.forRoot = function () {
+        return {
+            ngModule: StickyNavModule
+        };
+    };
+    StickyNavModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                common_1.CommonModule
+            ],
+            declarations: [
+                sticky_nav_directive_1.StickyNavDirective
+            ],
+            exports: [
+                sticky_nav_directive_1.StickyNavDirective
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], StickyNavModule);
+    return StickyNavModule;
+}());
+exports.StickyNavModule = StickyNavModule;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/ng2-sticky-nav/dist/src/sticky-nav.directive.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/ng2-sticky-nav/dist/src/sticky-nav.directive.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var rxjs_1 = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+var StickyNavDirective = (function () {
+    function StickyNavDirective(elementRef, renderer) {
+        this.elementRef = elementRef;
+        this.renderer = renderer;
+        this.lastScroll = 0;
+        this.isSticky = false;
+    }
+    StickyNavDirective.prototype.ngOnInit = function () {
+        var _this = this;
+        this.offsetTop = this.elementRef.nativeElement.offsetTop;
+        rxjs_1.Observable.fromEvent(window, 'scroll').subscribe(function () { return _this.manageScrollEvent(); });
+    };
+    StickyNavDirective.prototype.manageScrollEvent = function () {
+        var scroll = window.pageYOffset;
+        if (scroll > this.lastScroll && !this.isSticky && scroll >= this.offsetTop) {
+            this.setSticky();
+        }
+        else if (scroll < this.lastScroll && this.isSticky && scroll <= this.offsetTop) {
+            this.unsetSticky();
+        }
+        this.lastScroll = scroll;
+    };
+    StickyNavDirective.prototype.setSticky = function () {
+        this.isSticky = true;
+        this.setStyle('position', 'fixed');
+        this.setStyle('top', '0');
+        this.setClass(true);
+    };
+    StickyNavDirective.prototype.unsetSticky = function () {
+        this.isSticky = false;
+        this.setStyle('position', 'static');
+        this.setClass(false);
+    };
+    StickyNavDirective.prototype.setStyle = function (key, value) {
+        this.renderer.setElementStyle(this.elementRef.nativeElement, key, value);
+    };
+    StickyNavDirective.prototype.setClass = function (add) {
+        this.renderer.setElementClass(this.elementRef.nativeElement, this.stickyClass, add);
+    };
+    __decorate([
+        core_1.Input('stickyClass'), 
+        __metadata('design:type', String)
+    ], StickyNavDirective.prototype, "stickyClass", void 0);
+    StickyNavDirective = __decorate([
+        core_1.Directive({
+            selector: '[ngStickyNav]'
+        }), 
+        __metadata('design:paramtypes', [core_1.ElementRef, core_1.Renderer])
+    ], StickyNavDirective);
+    return StickyNavDirective;
+}());
+exports.StickyNavDirective = StickyNavDirective;
+//# sourceMappingURL=sticky-nav.directive.js.map
+
+/***/ }),
+
 /***/ "./node_modules/rxjs/_esm5/index.js":
 /*!******************************************!*\
   !*** ./node_modules/rxjs/_esm5/index.js ***!
