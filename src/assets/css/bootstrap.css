@@ -2836,6 +2836,17 @@ pre code {
     margin-left: 100%;
   }
 }
+
+.circle-base {
+  border-radius: 50%;
+}
+
+.profile-style {
+  height: 500px;
+  width: 400px;
+  margin-top: 50px;
+}
+
 table {
   background-color: transparent;
 }

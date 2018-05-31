@@ -199,6 +199,10 @@ app.get('/Preloader_2.gif', (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/images/Preloader_2.gif'));
 });
 
+app.get('/assets/images/nice_photo.jpg', (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/images/nice_photo.jpg'));
+});
+
 /**
  * Unhandled requests
  */
