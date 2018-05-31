@@ -335,7 +335,7 @@ p {
   }
 }
 
-#fh5co-about {
+#fh5co-About-Me {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -347,15 +347,15 @@ p {
   background: #E8ECF1;
   width: 100%;
 }
-#fh5co-about .fh5co-2col {
+#fh5co-About-Me .fh5co-2col {
   width: 50%;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-about .fh5co-2col {
+  #fh5co-About-Me .fh5co-2col {
     width: 100%;
   }
 }
-#fh5co-about .fh5co-2col-inner {
+#fh5co-About-Me .fh5co-2col-inner {
   padding: 5em 0;
   width: 585px;
   margin-right: auto;
@@ -364,34 +364,34 @@ p {
   padding-right: 15px;
 }
 @media screen and (max-width: 1200px) {
-  #fh5co-about .fh5co-2col-inner {
+  #fh5co-About-Me .fh5co-2col-inner {
     width: 485px;
   }
 }
 @media screen and (max-width: 992px) {
-  #fh5co-about .fh5co-2col-inner {
+  #fh5co-About-Me .fh5co-2col-inner {
     width: 375px;
   }
 }
 @media screen and (max-width: 768px) {
-  #fh5co-about .fh5co-2col-inner {
+  #fh5co-About-Me .fh5co-2col-inner {
     width: 100% !important;
     padding: 2em 0 3em 0;
   }
 }
-#fh5co-about .fh5co-2col-inner.left {
+#fh5co-About-Me .fh5co-2col-inner.left {
   float: right;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-about .fh5co-2col-inner.left {
+  #fh5co-About-Me .fh5co-2col-inner.left {
     float: none;
   }
 }
-#fh5co-about .fh5co-2col-inner.right {
+#fh5co-About-Me .fh5co-2col-inner.right {
   float: left;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-about .fh5co-2col-inner.right {
+  #fh5co-About-Me .fh5co-2col-inner.right {
     float: none;
   }
 }
@@ -537,16 +537,16 @@ p {
   outline: none;
 }
 
-#fh5co-services {
+#fh5co-Internships {
   position: relative;
   padding: 7em 0;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-services {
+  #fh5co-Internships {
     padding: 5em 0 3em 0;
   }
 }
-#fh5co-services .fh5co-video {
+#fh5co-Internships .fh5co-video {
   position: absolute;
   top: 0;
   width: 90px;
@@ -556,12 +556,12 @@ p {
   top: -45px;
   text-align: center;
 }
-#fh5co-services .fh5co-video span {
+#fh5co-Internships .fh5co-video span {
   display: block;
   padding-top: 100px;
   font-size: 14px;
 }
-#fh5co-services .fh5co-video a {
+#fh5co-Internships .fh5co-video a {
   float: left;
   width: 90px;
   height: 90px;
@@ -577,7 +577,7 @@ p {
   -ms-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.19);
 }
-#fh5co-services .fh5co-video a i {
+#fh5co-Internships .fh5co-video a i {
   padding-left: 10px;
   text-align: center;
   height: 90px;
@@ -586,10 +586,10 @@ p {
   font-size: 40px;
   line-height: 40px;
 }
-#fh5co-services .fh5co-video a:hover {
+#fh5co-Internships .fh5co-video a:hover {
   background: #57D131;
 }
-#fh5co-services .fh5co-video a:hover, #fh5co-services .fh5co-video a:focus, #fh5co-services .fh5co-video a:active {
+#fh5co-Internships .fh5co-video a:hover, #fh5co-Internships .fh5co-video a:focus, #fh5co-Internships .fh5co-video a:active {
   text-decoration: none;
   outline: none;
   -webkit-transform: scale(1.2);
@@ -598,7 +598,7 @@ p {
   -o-transform: scale(1.2);
   transform: scale(1.2);
 }
-#fh5co-services .service {
+#fh5co-Internships .service {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -614,23 +614,23 @@ p {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#fh5co-services .service .icon {
+#fh5co-Internships .service .icon {
   text-align: center;
   width: 100%;
   margin-bottom: 30px;
 }
-#fh5co-services .service .icon i {
+#fh5co-Internships .service .icon i {
   font-size: 40px;
   color: #57D131;
 }
-#fh5co-services .service h3 {
+#fh5co-Internships .service h3 {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   color: #368f95;
 }
-#fh5co-services .service:hover, #fh5co-services .service:focus {
+#fh5co-Internships .service:hover, #fh5co-Internships .service:focus {
   border: 1px solid #e6e6e6;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
@@ -693,17 +693,17 @@ p {
   font-size: 18px;
 }
 
-#fh5co-team {
+#fh5co-Hobbies {
   clear: both;
   padding: 7em 0;
   background: #E8ECF1;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-team {
+  #fh5co-Hobbies {
     padding: 3em 0;
   }
 }
-#fh5co-team .person {
+#fh5co-Hobbies .person {
   padding: 30px;
   margin-bottom: 30px;
   text-align: center;
@@ -716,7 +716,7 @@ p {
   border-radius: 5px;
   background: #fff;
 }
-#fh5co-team .person img {
+#fh5co-Hobbies .person img {
   width: 190px;
   margin: 0 auto 30px auto;
   -webkit-border-radius: 50%;
@@ -724,18 +724,18 @@ p {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-#fh5co-team .person h3 {
+#fh5co-Hobbies .person h3 {
   margin-bottom: 0;
 }
-#fh5co-team .person h4 {
+#fh5co-Hobbies .person h4 {
   color: #999999;
   font-size: 16px;
 }
-#fh5co-team .person .social {
+#fh5co-Hobbies .person .social {
   padding: 0;
   margin: 0;
 }
-#fh5co-team .person .social li {
+#fh5co-Hobbies .person .social li {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -744,13 +744,13 @@ p {
   zoom: 1;
   *display: inline;
 }
-#fh5co-team .person .social li a {
+#fh5co-Hobbies .person .social li a {
   padding: 10px;
 }
-#fh5co-team .person .social li a:hover {
+#fh5co-Hobbies .person .social li a:hover {
   text-decoration: none;
 }
-#fh5co-team .person:focus, #fh5co-team .person:hover {
+#fh5co-Hobbies .person:focus, #fh5co-Hobbies .person:hover {
   background: #fff;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
@@ -758,12 +758,12 @@ p {
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
 }
 
-#fh5co-gallery {
+#fh5co-Projects {
   clear: both;
   float: left;
   width: 100%;
 }
-#fh5co-gallery .fh5co-item {
+#fh5co-Projects .fh5co-item {
   display: block;
   position: relative;
   width: 25%;
@@ -778,21 +778,21 @@ p {
   transition: 0.5s;
 }
 @media screen and (max-width: 1200px) {
-  #fh5co-gallery .fh5co-item {
+  #fh5co-Projects .fh5co-item {
     height: 200px;
   }
 }
 @media screen and (max-width: 768px) {
-  #fh5co-gallery .fh5co-item {
+  #fh5co-Projects .fh5co-item {
     width: 50%;
   }
 }
 @media screen and (max-width: 480px) {
-  #fh5co-gallery .fh5co-item {
+  #fh5co-Projects .fh5co-item {
     width: 100%;
   }
 }
-#fh5co-gallery .fh5co-item .fh5co-overlay {
+#fh5co-Projects .fh5co-item .fh5co-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -806,7 +806,7 @@ p {
   -o-transition: 0.1s;
   transition: 0.1s;
 }
-#fh5co-gallery .fh5co-item .fh5co-copy {
+#fh5co-Projects .fh5co-item .fh5co-copy {
   z-index: 3;
   position: relative;
   height: 300px;
@@ -815,22 +815,22 @@ p {
   width: 100%;
 }
 @media screen and (max-width: 1200px) {
-  #fh5co-gallery .fh5co-item .fh5co-copy {
+  #fh5co-Projects .fh5co-item .fh5co-copy {
     height: 200px;
   }
 }
-#fh5co-gallery .fh5co-item .fh5co-copy > .fh5co-copy-inner {
+#fh5co-Projects .fh5co-item .fh5co-copy > .fh5co-copy-inner {
   width: 100%;
   height: 300px;
   display: table-cell;
   vertical-align: middle;
 }
 @media screen and (max-width: 1200px) {
-  #fh5co-gallery .fh5co-item .fh5co-copy > .fh5co-copy-inner {
+  #fh5co-Projects .fh5co-item .fh5co-copy > .fh5co-copy-inner {
     height: 200px;
   }
 }
-#fh5co-gallery .fh5co-item .fh5co-copy > .fh5co-copy-inner h2, #fh5co-gallery .fh5co-item .fh5co-copy > .fh5co-copy-inner h3 {
+#fh5co-Projects .fh5co-item .fh5co-copy > .fh5co-copy-inner h2, #fh5co-Projects .fh5co-item .fh5co-copy > .fh5co-copy-inner h3 {
   margin: 0;
   padding: 0;
   color: #fff;
@@ -838,7 +838,7 @@ p {
   visibility: hidden;
   position: relative;
 }
-#fh5co-gallery .fh5co-item .fh5co-copy > .fh5co-copy-inner h2 {
+#fh5co-Projects .fh5co-item .fh5co-copy > .fh5co-copy-inner h2 {
   top: -10px;
   font-size: 20px;
   margin-bottom: 10px;
@@ -847,7 +847,7 @@ p {
   transition: 0.3s;
   position: relative;
 }
-#fh5co-gallery .fh5co-item .fh5co-copy > .fh5co-copy-inner h3 {
+#fh5co-Projects .fh5co-item .fh5co-copy > .fh5co-copy-inner h3 {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: 0.3s;
@@ -856,34 +856,34 @@ p {
   position: relative;
   bottom: -10px;
 }
-#fh5co-gallery .fh5co-item:hover, #fh5co-gallery .fh5co-item:focus, #fh5co-gallery .fh5co-item:active {
+#fh5co-Projects .fh5co-item:hover, #fh5co-Projects .fh5co-item:focus, #fh5co-Projects .fh5co-item:active {
   background-size: cover;
   text-decoration: none;
 }
-#fh5co-gallery .fh5co-item:hover .fh5co-overlay, #fh5co-gallery .fh5co-item:focus .fh5co-overlay, #fh5co-gallery .fh5co-item:active .fh5co-overlay {
+#fh5co-Projects .fh5co-item:hover .fh5co-overlay, #fh5co-Projects .fh5co-item:focus .fh5co-overlay, #fh5co-Projects .fh5co-item:active .fh5co-overlay {
   opacity: .8;
   visibility: visible;
 }
-#fh5co-gallery .fh5co-item:hover .fh5co-copy-inner h2, #fh5co-gallery .fh5co-item:hover .fh5co-copy-inner h3, #fh5co-gallery .fh5co-item:focus .fh5co-copy-inner h2, #fh5co-gallery .fh5co-item:focus .fh5co-copy-inner h3, #fh5co-gallery .fh5co-item:active .fh5co-copy-inner h2, #fh5co-gallery .fh5co-item:active .fh5co-copy-inner h3 {
+#fh5co-Projects .fh5co-item:hover .fh5co-copy-inner h2, #fh5co-Projects .fh5co-item:hover .fh5co-copy-inner h3, #fh5co-Projects .fh5co-item:focus .fh5co-copy-inner h2, #fh5co-Projects .fh5co-item:focus .fh5co-copy-inner h3, #fh5co-Projects .fh5co-item:active .fh5co-copy-inner h2, #fh5co-Projects .fh5co-item:active .fh5co-copy-inner h3 {
   opacity: 1;
   visibility: visible;
 }
-#fh5co-gallery .fh5co-item:hover .fh5co-copy-inner h2, #fh5co-gallery .fh5co-item:focus .fh5co-copy-inner h2, #fh5co-gallery .fh5co-item:active .fh5co-copy-inner h2 {
+#fh5co-Projects .fh5co-item:hover .fh5co-copy-inner h2, #fh5co-Projects .fh5co-item:focus .fh5co-copy-inner h2, #fh5co-Projects .fh5co-item:active .fh5co-copy-inner h2 {
   top: 0;
 }
-#fh5co-gallery .fh5co-item:hover .fh5co-copy-inner h3, #fh5co-gallery .fh5co-item:focus .fh5co-copy-inner h3, #fh5co-gallery .fh5co-item:active .fh5co-copy-inner h3 {
+#fh5co-Projects .fh5co-item:hover .fh5co-copy-inner h3, #fh5co-Projects .fh5co-item:focus .fh5co-copy-inner h3, #fh5co-Projects .fh5co-item:active .fh5co-copy-inner h3 {
   bottom: 0;
 }
 
-#fh5co-contact {
+#fh5co-Contact {
   padding: 7em 0;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-contact {
+  #fh5co-Contact {
     padding: 3em 0;
   }
 }
-#fh5co-contact .form-control {
+#fh5co-Contact .form-control {
   border: none;
   box-shadow: none;
   border-bottom: 1px solid #E8ECF1;
@@ -892,7 +892,7 @@ p {
   -ms-border-radius: 0;
   border-radius: 0;
 }
-#fh5co-contact .form-control:active, #fh5co-contact .form-control:focus {
+#fh5co-Contact .form-control:active, #fh5co-Contact .form-control:focus {
   border-bottom: 1px solid #69c2c8;
 }
 

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {StickyNavModule} from 'ng2-sticky-nav/dist';
+import {ScrollToModule} from 'ng2-scroll-to';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import {StickyNavModule} from 'ng2-sticky-nav/dist';
   ],
   imports: [
     BrowserModule,
-    StickyNavModule
+    StickyNavModule,
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
