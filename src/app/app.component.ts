@@ -1,4 +1,9 @@
-import {AfterViewInit, Component, ElementRef, HostListener, Renderer2, ViewChild} from '@angular/core';
+import {
+  AfterViewInit, Component, ElementRef, EventEmitter, HostListener, Input, Output, Renderer2,
+  ViewChild
+} from '@angular/core';
+
+
 
 @Component({
   selector: 'app-root',

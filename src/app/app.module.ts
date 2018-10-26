@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {StickyNavModule} from 'ng2-sticky-nav/dist';
+import { NguiStickyModule } from '@ngui/sticky';
 import {ScrollToModule} from 'ng2-scroll-to';
 
 @NgModule({
@@ -11,7 +11,7 @@ import {ScrollToModule} from 'ng2-scroll-to';
   ],
   imports: [
     BrowserModule,
-    StickyNavModule,
+    NguiStickyModule,
     ScrollToModule.forRoot()
   ],
   providers: [],
