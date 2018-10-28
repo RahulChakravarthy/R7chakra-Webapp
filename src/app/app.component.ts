@@ -2,6 +2,7 @@ import {
   AfterViewInit, Component, ElementRef, EventEmitter, HostListener, Input, Output, Renderer2,
   ViewChild
 } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
 
@@ -16,7 +17,8 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('loadPage') loadPage: ElementRef;
   @ViewChild('scrollToTop') scrollToTop: ElementRef;
 
-  constructor() {}
+  constructor(private http: HttpClient) {
+  }
 
   /**
    * After component is loaded
@@ -70,5 +72,4 @@ export class AppComponent implements AfterViewInit {
       }, 25);
     }
   }
-
 }

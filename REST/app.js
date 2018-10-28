@@ -3,8 +3,17 @@ let express = require('express');
 let path = require('path');
 let app = express();
 
+const nodeMailer = require('nodemailer');
+const bodyParser = require('body-parser');
+
 
 app.use(express.static(path.join(__dirname, '../', '/dist')));
+
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(bodyParser.json());
+
 
 /**
  * All Angular setup requests
@@ -201,6 +210,28 @@ app.get('/Preloader_2.gif', (req, res) => {
 
 app.get('/assets/images/nice_photo.jpg', (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/images/nice_photo.jpg'));
+});
+
+const emailDestination = 'rahul.cha101@gmail.com';
+const emailSubject = 'r7chakra webapp message';
+
+app.post('/send-message', (req, res) => {
+  let transporter = nodeMailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+      user: 'xxx@xx.com',
+      pass: 'xxxx'
+    }
+  });
+
+  let mailOptions = {
+    from: req.body.sendEmailUserName + ' <' + req.body.sendEmailAddress + '>', // sender address
+    to: emailDestination, // list of receivers
+    subject: emailSubject, // Subject line
+    text: req.body.sendEmailTextMessage, // plain text body
+  };
 });
 
 /**
