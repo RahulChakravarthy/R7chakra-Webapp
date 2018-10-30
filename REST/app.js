@@ -6,7 +6,6 @@ let app = express();
 const nodeMailer = require('nodemailer');
 const bodyParser = require('body-parser');
 
-
 app.use(express.static(path.join(__dirname, '../', '/dist')));
 
 app.use(bodyParser.urlencoded({
