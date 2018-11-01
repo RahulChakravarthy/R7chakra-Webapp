@@ -9,7 +9,7 @@
           <div class="js-fullheight-home fh5co-copy">
             <div class="js-fullheight-home fh5co-copy-inner">
               <h1 style="text-shadow: 2px 2px 10px #4a4a4a">Rahul Chakravarthy</h1>
-              <h2>Android | Front End | Back End | Embedded Systems</h2>
+              <h2>Android | Front End | Back End</h2>
             </div>
             <div class="col-md-12">
               <img class="circle-base col-lg-offset-10 profile-style" src="../assets/images/nice_photo.jpg" alt="Avatar"/>
@@ -39,33 +39,22 @@
 
     <div id="fh5co-About-Me" data-section="About Me">
       <div class="fh5co-2col">
-
         <div class="fh5co-2col-inner left">
-
           <div class="fh5co-tabs-container">
-            <ul class="fh5co-tabs fh5co-three">
-              <li class="active"><a href="#" data-tab="marketing">Personal</a></li>
-              <li><a href="#" data-tab="analysis">Education</a></li>
-              <li><a href="#" data-tab="strategy">Awards</a></li>
+            <ul data-tabs class="fh5co-tabs fh5co-one">
+              <li class="active"><a data-tab="marketing">Personal</a></li>
             </ul>
-            <div class="fh5co-tab-content active" data-tab-content="marketing">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate laborum sapiente officiis molestiaea.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid aperiam eveniet officia molestiae temporibus beatae dolores dignissimos aspernatur eius doloremque ad, eaque pariatur, repellendus illum, nostrum velit necessitatibus molestias.</p>
+            <div id="personalTab" class="fh5co-tab-content active" data-tab-content="marketing">
+              <h2>Welcome to my blog!</h2>
+              <p>I am a 3rd year Computer Engineering student at the University of Waterloo with a passion for Web and Mobile Application development.<br/><br/> I have over a year's worth of professional software development experience and I am always looking for exciting internships to further my skills and hone my abilities.
+                <br/><br/>Here are a few links to my portfolio and bios:</p>
               <ul>
                 <li><a href="https://github.com/RahulChakravarthy" target="_blank">Github</a></li>
                 <li><a href="https://www.linkedin.com/in/rahul-chakravarthy-423361126/" target="_blank">LinkedIn</a></li>
                 <li><a href="https://devpost.com/RahulChakravarthy?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank">Devpost</a></li>
               </ul>
-            </div>
-
-            <div class="fh5co-tab-content" data-tab-content="analysis">
-              <h2>Quam quasi illum expedita dicta nemo fugit reprehenderit similique! Corporis praesentium magnam sequi.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla explicabo, molestiae eaque fugiat dolores est esse, doloremque placeat assumenda corrupti officia dolorum. Sunt saepe ut, explicabo consectetur, nostrum illo est.</p>
-            </div>
-
-            <div class="fh5co-tab-content" data-tab-content="strategy">
-              <h2>Magnam iste obcaecati illo laboriosam amet. Dignissimos sed quis voluptatum corporis adipisci amet.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore illum expedita placeat debitis, dignissimos obcaecati et modi. Possimus id dicta consequuntur veritatis, reiciendis at expedita voluptate sint distinctio eligendi!</p>
+              <br/>
+              <p>Please contact me if you know of any opportunities that I might be a fit for.</p>
             </div>
           </div>
         </div>
@@ -73,7 +62,7 @@
     </div>
 
     <div id="fh5co-Internships" data-section="Internships">
-      <div class="fh5co-video"><a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"></a></div>
+      <div class="fh5co-video"><a href="../assets/pdf/resume.pdf" class="popup-vimeo" target="_blank"><div style="display: table-cell; vertical-align: middle">Resume</div></a></div>
       <div class="container">
         <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
           <h2>Internships</h2>
@@ -81,44 +70,76 @@
         </div>
         <div class="col-md-4">
           <div class="service">
-            <div class="icon"><i class="icon-present"></i></div>
+            <h4><i>Carrot Inc.</i></h4>
             <h4>Mobile Software Engineering Intern, Android</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident.</p>
+            <h3>Redwood City, California</h3>
+            <h5>September 2018 - December 2018</h5>
+            <ul>
+              <li style="text-align: left;">Architected the view components for a quit date popup and orientation widget on the home screen</li>
+              <li style="text-align: left;">Built the onboarding MVVM architecture allowing thousands of users to pair with their Bluetooth sensors</li>
+              <li style="text-align: left;">Migrated the sensor application to a library format to be injected as a gradle dependency in the main platform</li>
+            </ul>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service">
-            <div class="icon"><i class="icon-present"></i></div>
+            <h4><i>Spotit Inc.</i></h4>
             <h4>Android and Backend Software Developer</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident.</p>
+            <h3>Ottawa, Ontario</h3>
+            <h5>February 2018 - August of 2018</h5>
+            <ul>
+              <li style="text-align: left;">Built a prototype payment processing Android App for a startup company using Retrofit2 HTTP client for REST API calls, Stripe API for payment processing and Google’s Fused Location API for location pinging</li>
+              <li style="text-align: left;">Constructed a location dispatcher and location service module (NodeJS + MongoDB) to be used as a medium for all user data CRUD operations</li>
+            </ul>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service">
-            <div class="icon"><i class="icon-present"></i></div>
-            <h4>Fullstack Software Application Developer</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident.</p>
+            <h4><i>Martello Technologies Inc.</i></h4>
+            <h4>Full Stack Software Application Developer</h4>
+            <h3>Ottawa, Ontario</h3>
+            <h5>January 2018 - April 2018</h5>
+            <ul>
+              <li style="text-align: left;">Architected the data access object layer for a new Mitel feed to support the onboarding of hundreds of customers to the company’s platform</li>
+              <li style="text-align: left;">Designed a data analytics rollback tool to cross compare the accuracy of Mitel’s monthly licensing feeds containing over 300 000 rows of data</li>
+              <li style="text-align: left;">Composed an S3FileFetch cron job which imported customer inventory files from Amazon’s S3Filestore every 30 seconds and effectively saved the company hours of manual work</li>
+            </ul>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service">
-            <div class="icon"><i class="icon-eye"></i></div>
+            <h4><i>Public Knowledge Project</i></h4>
             <h4>Systems Developer</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident.</p>
+            <h3>Vancouver, British Columbia</h3>
+            <h5>May 2017 - August 2017</h5>
+            <ul>
+              <li style="text-align: left;">Performed feature enhancements and bug fixes on company software platforms in a LAMP (Linux, Apache, MySQL, PHP) environment</li>
+              <li style="text-align: left;">Designed a search engine accessible via REST API to improve internal searching and archiving of over 10 000 stored records</li>
+              <li style="text-align: left;">Created a client requested BePress import plugin to parse journal XML metadata and store it in company servers</li>
+            </ul>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service">
-            <div class="icon"><i class="icon-paper-plane"></i></div>
+            <h4><i>Gharana Arts Inc.</i></h4>
             <h4>Media Designer</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident.</p>
+            <h3>Ottawa, Ontario</h3>
+            <h5>May 2016 - August 2016</h5>
+            <ul>
+              <li style="text-align: left;">Designed graphics on Photoshop and managed WordPress hosted website throughout summer concerts, viewable at <a href="http://gharana.ca/">gharana.ca</a></li>
+            </ul>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service">
-            <div class="icon"><i class="icon-pencil"></i></div>
-            <h4>Canadian Science and Technology Museum Volunteer</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident.</p>
+            <h4><i>Canadian Science and Technology Museum</i></h4>
+            <h4>Museum Volunteer</h4>
+            <h3>Ottawa, Ontario</h3>
+            <h5>September 2013 - June 2015</h5>
+            <ul>
+              <li style="text-align: left;">Organized activites for young children during important events</li>
+              <li style="text-align: left;">Facilitated communication between supervisors and children in both English and French</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -248,14 +269,12 @@
         </div>
         <div class="col-md-4">
           <div class="person">
-            <img src="../assets/images/nice_photo.jpg" alt="" class="img-responsive">
             <h3>Waterloo Jazz Band</h3>
             <p>I played lead Trumpet in the Waterloo Engineering Jazz Band called 'With Respect to Time' for the first 2 years of my university career</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="person">
-            <img src="../assets/images/nice_photo.jpg" alt="" class="img-responsive">
             <h3>Video Games Enthusiast</h3>
             <p>Playing video games is a way for me to relax. The games I play include:</p>
             <ul>
@@ -266,7 +285,6 @@
         </div>
         <div class="col-md-4">
           <div class="person">
-            <img src="../assets/images/nice_photo.jpg" alt="" class="img-responsive">
             <h3>Working Out</h3>
             <p>Since most of my day consists of sitting down in front of a computer, I stay healthy by going to the gym as often as I can</p>
           </div>
@@ -278,32 +296,8 @@
       <div class="container">
         <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
           <h2>Get In Touch</h2>
-          <p>If you need to get in touch with me, send me a message here and I'll be sure to respond as soon as I can</p>
+          <p>If you need to get in touch with me, please refer to the links I have included in my resume. All of those links are acceptable ways to get hold of me.</p>
         </div>
-        <form action="http://localhost:3000/send-message" method="post">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input id="inputName" type="text" name="name" class="form-control" placeholder="Your name">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input id="inputEmail" type="email" name="email" class="form-control" placeholder="Your email">
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <textarea  id="inputMessage" name="message" cols="30" rows="7" class="form-control" placeholder="Your message"></textarea>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <input type="submit" name="submit" value="Send message" class="btn btn-primary btn-outline">
-              </div>
-            </div>
-          </div>
-        </form>
       </div>
     </div>
   </div>

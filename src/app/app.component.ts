@@ -17,7 +17,10 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('loadPage') loadPage: ElementRef;
   @ViewChild('scrollToTop') scrollToTop: ElementRef;
 
+  private mhttp: HttpClient;
+
   constructor(private http: HttpClient) {
+    this.mhttp = http;
   }
 
   /**
@@ -71,5 +74,17 @@ export class AppComponent implements AfterViewInit {
         op += op;
       }, 25);
     }
+  }
+
+  sendMessage(nameId, emailId, messageId) {
+    console.log(this.mhttp);
+    this.mhttp.post('http://localhost:3000/sendMessage', {
+      sendEmailUserName : document.getElementById(nameId).textContent,
+      sendEmailAddress : document.getElementById(emailId).textContent,
+      sendEmailTextMessage : document.getElementById(messageId).textContent
+    }).subscribe(data => {
+      console.log(data);
+    });
+    return false;
   }
 }

@@ -388,7 +388,7 @@ p {
   }
 }
 #fh5co-About-Me .fh5co-2col-inner.right {
-  float: left;
+  float: right;
 }
 @media screen and (max-width: 768px) {
   #fh5co-About-Me .fh5co-2col-inner.right {

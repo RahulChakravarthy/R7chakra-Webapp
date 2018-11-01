@@ -214,7 +214,7 @@ app.get('/assets/images/nice_photo.jpg', (req, res) => {
 const emailDestination = 'rahul.cha101@gmail.com';
 const emailSubject = 'r7chakra webapp message';
 
-app.post('/send-message', (req, res) => {
+app.post('/sendMessage', (req, res) => {
   let transporter = nodeMailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
