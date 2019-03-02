@@ -22,6 +22,13 @@ app.get('/', (req, res) => {
 });
 
 /**
+ * Setup android instant app
+ */
+app.get('/.well-known/assetlinks.json/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'dist/r7chakra-webapp/assets/json/assetlinks.json'));
+});
+
+/**
  *  JS requests
  */
 app.get('/runtime.js', (req, res) => {

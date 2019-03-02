@@ -1,0 +1,25 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "tech.r7chakra.abswapclient",
+    "sha256_cert_fingerprints":
+    ["E0:79:BA:A5:20:A5:5F:FE:26:15:64:62:3E:28:23:00:95:34:15:A0:6D:91:EB:E0:C3:90:FA:F5:EE:6D:D4:58"]
+  }
+},
+  {
+    "relation": ["delegate_permission/common.get_login_creds"],
+    "target": {
+      "namespace": "web",
+      "site": "https://r7chakra-webapp.herokuapp.com"
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.get_login_creds"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "tech.r7chakra.abswapclient",
+      "sha256_cert_fingerprints":
+      ["E0:79:BA:A5:20:A5:5F:FE:26:15:64:62:3E:28:23:00:95:34:15:A0:6D:91:EB:E0:C3:90:FA:F5:EE:6D:D4:58"]
+    }
+  }]
